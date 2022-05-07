@@ -29,12 +29,10 @@ nav > a:hover {
     width: 100%;
     height: 100%;
     border: solid 1px;
+    padding: 10% 1px;
 
 }
 
-#bannertext {
-    margin: 10%;
-}
 .banner > div > h3 {
     font-family: "Arial Black", Gadget, sans-serif;
     font-size: 16pt;
@@ -52,16 +50,31 @@ nav > a:hover {
     width: fit-content;
 
 }
-.banner > div > a {
+#readMore {
     background-color: #bc9bb0;
     text-transform: uppercase;
     padding: 15px;
     
 }
-.banner > div > a:hover {
+#readMore:hover {
     background-color: #b4709b;
 }
 
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    gap: 10px 10px;
+    justify-content: space-between;
+}
+
+.pics {
+    object-fit: contain;
+    border: solid black 2px;
+    text-align: center;
+    width: fit-content;
+}
 
 
 footer {
