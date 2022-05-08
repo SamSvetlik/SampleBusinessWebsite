@@ -13,7 +13,7 @@ header {
     max-width: 100%;
     height: auto;
 }
-nav {
+.menu {
     display: flex;
     justify-content: space-between;
 }
@@ -23,6 +23,8 @@ nav > a {
 nav > a:hover {
     background-color: #bc9bb0;
 }
+
+
 .banner {
     background-image: url(./images/homeBanner.jpg);
     background-size: 100% 100%;
@@ -72,15 +74,23 @@ nav > a:hover {
 
 }
 
-.gallery > div {
+.gallery > a {
     text-align: center;
     width: fit-content;
+    color: black;
+    font-size: 16pt;
+    font-weight: bolder;
 }
 
-.pics {
+.pic {
     object-fit: contain;
     border: solid black 2px;
+    opacity: 0.5;
+	transition: 0.5s ease-in-out;
 
+}
+.pic:hover {
+    opacity: 1;
 }
 
 
@@ -96,6 +106,7 @@ footer > div {
 footer > div > ul {
     display: flex;
     list-style: none;
+    padding: 0;
 }
 footer > div > ul > li {
     margin: 20px;
@@ -104,4 +115,22 @@ footer > div > ul > li {
 .footerIcon {
     height: 35px;
     width: 35px;
+}
+@media (max-width: 962px) {
+    .gallery {
+        grid-template-columns: 1fr;
+        max-width: 300px;
+        margin: auto;
+    }
+    footer {
+        display: block;
+        margin: auto;
+        text-align: center;
+    }
+    footer > div > ul {
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
+        text-align: center;
+    }
 }
