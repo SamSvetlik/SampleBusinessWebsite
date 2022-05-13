@@ -13,12 +13,14 @@ header {
     max-width: 100%;
     height: auto;
 }
+
 .menu {
     display: flex;
     justify-content: space-between;
 }
 nav > a {
     color: black;
+    font-size: 12pt;
 }
 nav > a:hover {
     background-color: #bc9bb0;
@@ -132,5 +134,17 @@ footer > div > ul > li {
         margin-right: auto;
         width: fit-content;
         text-align: center;
+    }
+    .menu {
+        top: 0;
+        margin-top: 0px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    nav > a {
+        font-size: 16pt;
     }
 }
