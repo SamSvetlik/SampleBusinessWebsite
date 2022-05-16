@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../contact/contactStyle.css"> 
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <div class="logo">  <img src="../images/logo.jpg" class="logo" alt="Dale's Dead Bug logo"> </div>
+    <nav class="menu">
+        
+             <a href="../home/index.html"> HOME</a>
+             <a href="../about/aboutIndex.html"> ABOUT</a>
+             <a href="../gallery/galleryIndex.html" >GALLERY</a>
+             <a href="../blog/blogIndex.html"> BLOG</a>
+             <a href="../contact/contactIndex.html"> CONTACT</a>
+    </nav>
+</header>
+  <main>
+    <h1>SCHEDULE AN APPOINTMENT TODAY</h1>
+    <form action="results.html" method="get" enctype="multipart/form-data">
+    <div>
+    
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="dale@daletech.info">
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" id="phone" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    </div>
+
+    <div>
+      <label for="comments">What type of service do you need?</label>
+      <br>
+      <textarea id="comments" name="comments" minlength="20" maxlength="500" placeholder="Example: I've got a termite infestation" rows="4" cols="50"></textarea>
+
+    </div>
+
+    <div>
+      How did you hear about me?
+      <div>
+        <input type="checkbox" name="referral" id="referral">
+        <label for="referral">Referred from a friend</label>
+      </div>
+      <div>
+        <input type="checkbox" name="newspaperAd" id="newspaperAd">
+        <label for="newspaperAd">Newspaper Ad</label>
+      </div>
+      <div>
+        <input type="checkbox" name="radio" id="radio">
+        <label for="radio">Radio</label>
+      </div>
+      <div>
+        <input type="checkbox" name="oldie" id="oldie">
+        <label for="oldie">Returning Customer</label>
+      </div>
+    </div>
+    
+      <div>
+      Would you prefer to be contacted by email, text, or phone?
+        <div>
+        <input type="radio" name="contactType" id="email" value="email">
+        <label for="email">Email</label>
+        </div>
+        <div>
+        <input type="radio" name="contactType" id="text" value="text">
+        <label for="text">Text</label>
+        </div>
+        <div>
+        <input type="radio" name="contactType" id="phone" value="phone">
+        <label for="phone">Phone</label>
+        </div>
+      </div>
+    <div>
+      When would you like to schedule your appointment?
+      <input type="date" name="date" id="date" min="$today">
+    </div>
+
+    <button type="reset">Reset</button>
+    <button type="submit">Submit</button>
+  </form>
+</main>
+<footer>
+  <div><p>© 2022 by Rusty Shackleford. All rights reserved.</p></div>
+  <div>
+      <ul>
+          <li> <a href="https://www.facebook.com"> <img src="../images/facebook-icon.png" class="footerIcon"> </a> </li>
+          <li> <a href="https://twitter.com"> <img src="../images/twitter-icon.png" class="footerIcon"> </a> </li>
+          <li> <a href="https://www.pinterest.com"> <img src="../images/pinterest-icon.png" class="footerIcon"> </a> </li>
+          <li> <a href="https://www.tiktok.com"> <img src="../images/tiktok-icon.png" class="footerIcon"> </a> </li>
+      </ul>
+  </div>
+</footer>
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>
