@@ -43,13 +43,13 @@ h1 {
     margin-right: auto;
     padding-bottom: 4px;
 }
-.gallery > img {
+.gallery > a > img {
     border: solid black 4px;
     border-radius: 10px;
     opacity: 0.5;
 	transition: 0.5s ease-in-out;
 }
-.gallery > img:hover {
+.gallery > a > img:hover {
     opacity: 1;
 }
 footer {
